@@ -18,7 +18,7 @@
 #
 
 - name: Restart Neutron server
-  service: name={{ neutron_service }} state=restarted
+  service: name=neutron-server state=restarted
   ignore_errors: yes # Could not be installed
 
 - name: Restart Neutron plugin OpenvSwitch agent
